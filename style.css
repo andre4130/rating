@@ -1,0 +1,55 @@
+/* Ejercicio Rating */
+
+body {
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(108,117,125,0.5);
+  text-align: center;
+}
+
+.mainheader {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+.container {
+  justify-content: center;
+}
+
+.grid_rating {
+  justify-content:center;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.rate {
+  stroke:#17a2b8; stroke-width:10;
+   color:black; opacity:0.75;
+   content: f144;
+   font-size: 8em;
+   display: inline-flex;
+   filter: blur(1px);
+   transition: 0.3s all;
+   width: 100%;
+}
+
+.rated {
+  color: #17a2b8;
+  stroke: black; stroke-width:13;
+  opacity: 1;
+  content: f144;
+  font-size: 8em;
+  filter: blur(0);
+}
+
+.rate:hover,
+.rate:hover ~ svg {
+    color: #17a2b8;
+    stroke: black; stroke-width:13;
+    opacity: 1;
+    filter: blur(0);
+    cursor: pointer;
+};
